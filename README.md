@@ -165,5 +165,5 @@ schedule.every().day.at("10:00").do(run_daily_pipeline)
 ---
 
 ## Author
-**Developed by:** *Keerthana G*  
+**Developed by:** *Suhan Shaik*  
 **For:** *Internship Assignment – AI Merch Maker Lite*
