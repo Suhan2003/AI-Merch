@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Product Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Mock Product Visualizer</h1>
+
+    <form id="uploadForm">
+      <input type="file" name="product_image" id="productImage" accept="image/*" required />
+      <button type="submit">Upload & Generate Mockup</button>
+    </form>
+
+    <div id="ack" class="hidden"></div>
+
+    <div id="result" class="hidden">
+      <h2>Generated Mockup:</h2>
+      <img id="mockupPreview" src="" alt="Mockup Preview" />
+
+    </div>
+  </div>
+
+  <script>
+    const uploadForm = document.getElementById("uploadForm");
+    const ackDiv = document.getElementById("ack");
+    const resultDiv = document.getElementById("result");
+    const mockupPreview = document.getElementById("mockupPreview");
+
+    uploadForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById("productImage");
+      const formData = new FormData();
+      formData.append("product_image", fileInput.files[0]);
+
+      const response = await fetch("/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      // Show acknowledgment
+      ackDiv.textContent = data.message;
+      ackDiv.classList.remove("hidden");
+
+      // Show mockup & JSON
+      resultDiv.classList.remove("hidden");
+      mockupPreview.src = data.mockup_url + "?" + new Date().getTime(); // prevent caching
+    });
+  </script>
+</body>
+
+</html>

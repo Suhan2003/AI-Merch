@@ -1,0 +1,34 @@
+{
+  "product_idea": {
+    "title": "Git Blame My Cat",
+    "description": "An ultra-soft black tee featuring a dramatic courtroom scene where a puzzled cat sits on the defendant stand. Underneath, in retro terminal green, it reads: 'git blame -c \"Mr. Fluffypaws\"'. The jury is made up of rubber ducks, and there's a pull-request gavel labeled 'merge conflict' hovering overhead.",
+    "tags": [
+      "git",
+      "debugging",
+      "cat",
+      "programmer-humor",
+      "meme"
+    ],
+    "image_path": "C:\\Users\\golla\\Downloads\\ai-merch-maker-lite-main\\ai-merch-maker-lite-main\\sample_outputs\\product.png"
+  },
+  "mockup_data": {
+    "message": "\u2705 Uploaded successfully!",
+    "mockup_url": "/sample_outputs/mockup.png",
+    "original_image": "/uploads/uploaded_product.png",
+    "product_id": "mock831",
+    "variant": "t-shirt",
+    "image_position": "center",
+    "caption": "A funny t-shirt mockup generated automatically",
+    "tags": [
+      "funny",
+      "t-shirt",
+      "programmer",
+      "AI",
+      "mockup"
+    ]
+  },
+  "publisher_response": {
+    "status": "success",
+    "product_id": "fake-prod-6530"
+  }
+}
