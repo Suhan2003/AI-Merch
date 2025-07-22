@@ -1,12 +1,12 @@
 {
-  "title": "Git Blame My Cat",
-  "description": "An ultra-soft black tee featuring a dramatic courtroom scene where a puzzled cat sits on the defendant stand. Underneath, in retro terminal green, it reads: 'git blame -c \"Mr. Fluffypaws\"'. The jury is made up of rubber ducks, and there's a pull-request gavel labeled 'merge conflict' hovering overhead.",
+  "title": "404: Social Life Not Found",
+  "description": "A minimalist white tee featuring a browser-style error page that reads '404: Social Life Not Found' with a tiny stick-figure programmer hunched over a laptop, surrounded by empty coffee cups and pizza boxes. Underneath, a button says 'Retry in 5 years...' in classic hyperlink blue.",
   "tags": [
-    "git",
+    "programmer",
+    "404",
+    "social-life",
     "debugging",
-    "cat",
-    "programmer-humor",
-    "meme"
+    "funny"
   ],
   "image_path": "C:\\Users\\golla\\Downloads\\ai-merch-maker-lite-main\\ai-merch-maker-lite-main\\sample_outputs\\product.png"
 }

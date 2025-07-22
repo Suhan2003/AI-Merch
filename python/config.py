@@ -1,6 +1,8 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN", "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")
+HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
 
 # API Endpoints
 TEXT_MODEL_URL = "https://router.huggingface.co/v1/chat/completions"
